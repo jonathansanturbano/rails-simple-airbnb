@@ -1,0 +1,15 @@
+<nav class="navbar navbar-light bg-light" style="height: 70px; border: rgb(230, 230, 230) 1px solid;">
+</nav>
+<div class="container">
+  <div class="row">
+    <% @flats.each do |flat| %>
+    <div class="col-6">
+      <%= flat.name %>
+      <%= flat.address %>
+      <%= flat.description %>
+      <%= flat.price_per_night %>
+      <%= flat.number_of_guests %>
+      </div>
+    <% end %>
+  </div>
+</div>
